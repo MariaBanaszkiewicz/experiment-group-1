@@ -1,7 +1,12 @@
 from AccountManager import AccountManager
+from ToDoList import ToDoList
 
 
 def main():
+
+    toDoList = ToDoList()
+    toDoList.add_task("t", "d", 3)
+    toDoList.view_sorted_tasks();
 
     accountManager = AccountManager()
     val = input("Enter your value: ")
